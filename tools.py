@@ -423,7 +423,7 @@ async def remove_active_chat(chat_id):
     os.makedirs(chat_dir, exist_ok=True)
     clear_directory(chat_dir)
 
-
+'''
 async def autoleave_vc(message, duration_str,chat):
     """
     Automatically leave voice chat when only the bot remains in the call for 5 seconds
@@ -539,7 +539,7 @@ async def pautoleave_vc(message, duration_str):
         # Wait before next check
         await asyncio.sleep(10)
 
-
+'''
 async def update_progress_button(message, duration_str,chat):
     try:
         total_seconds = sum(int(x) * 60 ** i for i, x in enumerate(reversed(duration_str.split(":"))))
