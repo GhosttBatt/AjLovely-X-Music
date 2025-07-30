@@ -722,7 +722,6 @@ play_styles = {
 
     5: """<blockquote>• ᴄᴜʀʀᴇɴᴛ ᴛʀᴀᴄᴋ •</blockquote>
 <blockquote>─────────────
-⟡ ᴍᴏᴅᴇ: {}
 ⟡ ᴛɪᴛʟᴇ: {}
 ⟡ ʟᴇɴɢᴛʜ: {}
 ⟡ ᴜꜱᴇʀ: {}</blockquote>""",
