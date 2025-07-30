@@ -1107,16 +1107,6 @@ async def user_client_start_handler(client, message):
     buttons = [
    [InlineKeyboardButton("Aᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ", url=f"https://t.me/{client.me.username}?startgroup=true")],
    [InlineKeyboardButton("Hᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="commands_all")],
-   [
-       InlineKeyboardButton(
-           "Cʀᴇᴀᴛᴏʀ",
-           user_id=OWNER_ID
-       ) if ow_id else InlineKeyboardButton(
-           "Cʀᴇᴀᴛᴏʀ",
-           url="https://t.me/NubDockerbot"
-       ),
-       InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url = f"https://t.me/{GROUP}")
-   ],
 ]
     import psutil
     from random import choice
@@ -1307,9 +1297,6 @@ async def commands_handler(client, callback_query):
             InlineKeyboardButton("🎨 Kang/Meme",  callback_data="commands_kang"),
             InlineKeyboardButton("📊 Status",     callback_data="commands_status"),
         ],
-        [
-            InlineKeyboardButton("⚙️ Owner",      callback_data="commands_owner"),
-        ],
         [InlineKeyboardButton("🏠 Home",         callback_data="commands_back")],
     ]
 
@@ -1355,16 +1342,7 @@ async def commands_handler(client, callback_query):
             buttons = [
                 [InlineKeyboardButton("Aᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ", url=f"https://t.me/{client.me.username}?startgroup=true")],
                 [InlineKeyboardButton("Hᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="commands_all")],
-                [
-                    InlineKeyboardButton(
-                        "Cʀᴇᴀᴛᴏʀ",
-                        user_id=OWNER_ID
-                    ) if ow_id else InlineKeyboardButton(
-                        "Cʀᴇᴀᴛᴏʀ",
-                        url="https://t.me/NubDockerbot"
-                    ),
-                    InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url = f"https://t.me/{GROUP}")
-                ],
+                
             ]
             await callback_query.message.edit_caption(
                 caption=greet_message,
@@ -1624,7 +1602,7 @@ async def play_handler_func(client, message):
     # Check queue for the target chat
     current_queue = len(queues.get(target_chat_id, [])) if queues else 0  
 
-    massage = await message.reply("⚡")
+    massage = await message.reply("ʀᴇ𝗌ᴘᴏɴᴄᴇ ᴛɪᴍᴇ 0.3𝗌ᴇᴄ...")
     
     # Set target chat as active based on channel mode or not
     is_active = await is_active_chat(client, target_chat_id)
@@ -1836,7 +1814,7 @@ async def play_handler_func(client, message):
             )
         ],
         ])
-                await client.send_message(message.chat.id, queue_styles[int(11)].format(lightyagami(mode), f"[{lightyagami(title)}](https://t.me/{client.me.username}?start=vidid_{extract_video_id(youtube_link)})" if not os.path.exists(youtube_link) else  lightyagami(title), lightyagami(duration), position), reply_markup=keyboard,disable_web_page_preview=True)
+                await client.send_message(message.chat.id, queue_styles[int(11)].format(f"[{lightyagami(title)[:15]}](https://t.me/{client.me.username}?start=vidid_{extract_video_id(youtube_link)})" if not os.path.exists(youtube_link) else  lightyagami(title)[:15], lightyagami(duration), position), reply_markup=keyboard,disable_web_page_preview=True)
 
     else:
       await dend(client, massage, target_chat.id if channel_mode else None)
