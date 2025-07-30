@@ -567,7 +567,7 @@ async def update_progress_button(message, duration_str,chat):
             # Calculate progress bar (6 `─` with spaces)
             progress_length = 8
             position = min(int((elapsed_seconds / total_seconds) * progress_length), progress_length)
-            progress_bar = "─ " * position + "▷" + "─ " * (progress_length - position - 1)
+            progress_bar = "⭑" * position + "✪" + "⭑" * (progress_length - position - 1)
             progress_bar = progress_bar.strip()  # Remove trailing spaces
 
             progress_text = f"{elapsed_str} {progress_bar} {duration_str}"
@@ -635,12 +635,11 @@ queue_styles = {
 ║ 𝔻𝕦𝕣𝕒𝕥𝕚𝕠𝕟: {}
 ╚ ℙ𝕠𝕤𝕚𝕥𝕚𝕠𝕟: #{}""",
 
-    5: """• ғᴜᴛᴜʀᴇ ᴛʀᴀᴄᴋ •
-────────────
-⟡ ᴍᴏᴅᴇ: {}
+    5: """<blockquote>• ғᴜᴛᴜʀᴇ ᴛʀᴀᴄᴋ •</blockquote>
+<blockquote>────────────
 ⟡ ᴛɪᴛʟᴇ: {}
 ⟡ ʟᴇɴɢᴛʜ: {}
-⟡ ᴘᴏꜱɪᴛɪᴏɴ: #{}""",
+⟡ ᴘᴏꜱɪᴛɪᴏɴ: #{}</blockquote>""",
 
     6: """🌊 𝙌𝙪𝙚𝙪𝙚 𝙐𝙥𝙙𝙖𝙩𝙚𝙙 🌊
 ┏━━━━━━━━━━━
@@ -722,12 +721,12 @@ play_styles = {
 ║ 𝔻𝕦𝕣𝕒𝕥𝕚𝕠𝕟: {}
 ╚ ℝ𝕖𝕢𝕦𝕖𝕤𝕥𝕖𝕕 𝕓𝕪: {}""",
 
-    5: """• ᴄᴜʀʀᴇɴᴛ ᴛʀᴀᴄᴋ •
-─────────────
+    5: """<blockquote>• ᴄᴜʀʀᴇɴᴛ ᴛʀᴀᴄᴋ •</blockquote>
+<blockquote>─────────────
 ⟡ ᴍᴏᴅᴇ: {}
 ⟡ ᴛɪᴛʟᴇ: {}
 ⟡ ʟᴇɴɢᴛʜ: {}
-⟡ ᴜꜱᴇʀ: {}""",
+⟡ ᴜꜱᴇʀ: {}</blockquote>""",
 
     6: """🌊 𝙉𝙤𝙬 𝙋𝙡𝙖𝙮𝙞𝙣𝙜 🌊
 ┏━━━━━━━━━━━━
@@ -1196,9 +1195,9 @@ async def join_call(message, title, youtube_link, chat, by, duration, mode, thum
         ])
         
         sent_message = await clients["bot"].send_photo(
-            message.chat.id, thumb, play_styles[int(gvarstatus(OWNER_ID, "format") or 11)].format(
-                lightyagami(mode),
-                f"[{lightyagami(title)}](https://t.me/{clients['bot'].me.username}?start=vidid_{extract_video_id(youtube_link)})" if not os.path.exists(youtube_link) else lightyagami(title), 
+            message.chat.id, thumb, play_styles[int(gvarstatus(OWNER_ID, "format") or 5)].format(
+                
+                f"[{lightyagami(title)[:15]}](https://t.me/{clients['bot'].me.username}?start=vidid_{extract_video_id(youtube_link)})" if not os.path.exists(youtube_link) else lightyagami(title)[:15], 
                 duration, 
                 by.mention()
             ),
