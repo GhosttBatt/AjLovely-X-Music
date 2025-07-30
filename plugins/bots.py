@@ -1337,13 +1337,20 @@ async def commands_handler(client, callback_query):
             name = callback_query.from_user.mention()
             botname = client.me.mention()
             greet_message = gvarstatus(client.me.id, "WELCOME") or """
-🌟 𝖂𝖊𝖑𝖈𝖔𝖒𝖊, {name}! 🌟
+<blockquote>ᴡᴇʟᴄᴏᴍᴇ, {name}
 
-🎶 Your **musical journey** begins with {botname}!
-
-✨ Enjoy _crystal-clear_ audio and a vast library of sounds.
-
-🚀 Get ready for an *unparalleled* musical adventure!
+◆ ɪ'ᴍ {botname}
+ᴀ ᴛᴇʟᴇɢʀᴀᴍ ꜱᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ ᴡɪᴛʜ ꜱᴏᴍᴇ ᴜꜱᴇꜰᴜʟ
+◆ ᴜʟᴛʀᴀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ.</blockquote>
+<blockquote>✨ ꜰᴇᴀᴛᴜʀᴇꜱ ⚡️
+◆ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs.
+◆ Sᴜᴘᴇʀғᴀsᴛ ʟᴀɢ Fʀᴇᴇ ᴘʟᴀʏᴇʀ.
+◆ ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ + ᴠɪᴅᴇᴏ.
+◆ ʟɪᴠᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.
+◆ ɴᴏ ᴘʀᴏᴍᴏ.
+◆ ʙᴇꜱᴛ ꜱᴏᴜɴᴅ Qᴜᴀʟɪᴛʏ.
+◆ 24×7 ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ.
+◆ ᴀᴅᴅ ᴛʜɪꜱ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ɪᴛ ᴀᴅᴍɪɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴍᴜꜱɪᴄ 🎵.</blockquote>
 """
             greet_message = await format_welcome_message(client, greet_message, user_id, callback_query.from_user.mention())
             buttons = [
@@ -3771,13 +3778,20 @@ async def set_welcome_handler(client, message):
                     alive_logo = rename_file(alive_logo, logo_path_mp4)
 
             welcome_text = gvarstatus(sender_id, "WELCOME") or f"""
-🌟 𝖂𝖊𝖑𝖈𝖔𝖒𝖊, {name}! 🌟
+<blockquote>ᴡᴇʟᴄᴏᴍᴇ, {name}
 
-🎶 Your **musical journey** begins with {botname}!
-
-✨ Enjoy _crystal-clear_ audio and a vast library of sounds.
-
-🚀 Get ready for an *unparalleled* musical adventure!
+◆ ɪ'ᴍ {botname}
+ᴀ ᴛᴇʟᴇɢʀᴀᴍ ꜱᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ ᴡɪᴛʜ ꜱᴏᴍᴇ ᴜꜱᴇꜰᴜʟ
+◆ ᴜʟᴛʀᴀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ.</blockquote>
+<blockquote>✨ ꜰᴇᴀᴛᴜʀᴇꜱ ⚡️
+◆ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs.
+◆ Sᴜᴘᴇʀғᴀsᴛ ʟᴀɢ Fʀᴇᴇ ᴘʟᴀʏᴇʀ.
+◆ ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ + ᴠɪᴅᴇᴏ.
+◆ ʟɪᴠᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.
+◆ ɴᴏ ᴘʀᴏᴍᴏ.
+◆ ʙᴇꜱᴛ ꜱᴏᴜɴᴅ Qᴜᴀʟɪᴛʏ.
+◆ 24×7 ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ.
+◆ ᴀᴅᴅ ᴛʜɪꜱ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ɪᴛ ᴀᴅᴍɪɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴍᴜꜱɪᴄ 🎵.</blockquote>
 """
             if alive_logo.endswith(".mp4"):
                 await client.send_video(
