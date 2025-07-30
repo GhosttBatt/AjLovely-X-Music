@@ -3019,7 +3019,6 @@ async def pingme(client, message):
 │ ⌚ Speed: {ping_duration:.2f}ms
 │ 📊 Status: {status}
 │ ⏱️ Uptime: {uptime}
-│ 👑 Owner: {owner.mention()}
 ╰──────────────────
 """
 
