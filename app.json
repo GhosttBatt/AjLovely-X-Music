@@ -14,47 +14,47 @@
   "env": {
     "API_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "",
+      "value": "26204186",
       "required": true
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "",
+      "value": "c277a7f93583f68d0fdfdcb68f5fc6c0",
       "required": true
     },
     "BOT_TOKEN": {
       "description": "A Bot's token from Botfather",
-      "value": "",
+      "value": "8209706073:AAGayoWtC1Dqch1UbjAj8_-fo3GCbMrmZmI",
       "required": true
     },
     "OWNER_ID": {
       "description": "Telegram user ID of the bot owner",
-      "value": "6076474757",
+      "value": "8099828972",
       "required": true
     },
     "STRING_SESSION": {
       "description": "A Pyrogram session string for the user account",
-      "value": "",
+      "value": "BQGP2BoAP4JT-5wna5L_Z1nareUi02O8FEyUUn4VmOSrh71vWKcJoqazyJ4_LmSMMKR-9V7-3_QLUUa0YP02Nctpdu0v4ZdqiE-KldC1NtGYVloBBxF0lXMHlSGXstx5crc19uDGrnJiTs809TF70PkewPb9iHSp1mfTGI0nY-uzhJHgoKiyLlUgjWsLnDuNw66RQo2TrbAiNK0ZtGj1qfe7dTDYF0FFrh4gK7DkWck3B7KeGNNfEred5YRUOPTHp0OEq28cwNGHQNI6nVrdqDLDnZNV1xAtXhVoyTYYiZ12-tDjblYm8PX9l72JJluqvpyG7Pjarp8AAmc3WlPaqOWZJ32_YQAAAAHAItULAA",
       "required": true
     },
     "GROUP": {
       "description": "Your support group username without @",
-      "value": "nub_coder_s",
+      "value": "HeartBeat_Fam",
       "required": false
     },
     "CHANNEL": {
       "description": "Your updates channel username without @",
-      "value": "nub_coders_updates",
+      "value": "HeartBeat_Offi",
       "required": false
     },
     "MONGODB_URI": {
       "description": "MongoDB connection string URI for database",
-      "value": "mongodb+srv://nubcoders:nubcoders@music.8rxlsum.mongodb.net/?retryWrites=true&w=majority&appName=music",
+      "value": "mongodb+srv://ghosttbatt:Ghost2021@ghosttbatt.ocbirts.mongodb.net/?retryWrites=true&w=majority",
       "required": true
     },
     "LOGGER_ID": {
       "description": "chat id of the logger group",
-      "value": "",
+      "value": "2275616383",
       "required": false
     }
   },
