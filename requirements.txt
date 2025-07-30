@@ -21,7 +21,7 @@ py-tgcalls
 cryptg
 pyrotgfork
 #https://devgagan.in/wp-content/uploads/2024/06/ggnpyro.zip
-#kurigram
+kurigram
 Telethon
 TgCrypto
 pymongo
@@ -37,4 +37,4 @@ ffmpeg
 uvloop
 reportlab
 aiohttp
-pyrogram
+#pyrogram
