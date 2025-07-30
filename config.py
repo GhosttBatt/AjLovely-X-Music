@@ -16,8 +16,8 @@ STRING_SESSION = os.getenv("STRING_SESSION", "BQGP2BoAP4JT-5wna5L_Z1nareUi02O8FE
 GROUP = os.getenv("GROUP", "HeartBeat_Fam")
 CHANNEL = os.getenv("CHANNEL", "HeartBeat_Offi")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "8209706073:AAGayoWtC1Dqch1UbjAj8_-fo3GCbMrmZmI")
-OWNER_ID = int(os.getenv("OWNER_ID", 8099828972))
-LOGGER_ID = os.getenv("LOGGER_ID", None)
+OWNER_ID = int(os.getenv("OWNER_ID", "8099828972"))
+LOGGER_ID = os.getenv("LOGGER_ID", "2275616383")
 mongodb = os.getenv("MONGODB_URI", "mongodb+srv://ghosttbatt:Ghost2021@ghosttbatt.ocbirts.mongodb.net/?retryWrites=true&w=majority")
 # Working directory
 ggg = os.getcwd()
