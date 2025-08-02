@@ -1,6 +1,6 @@
 # Music Bot Project
 
-![Music Cover](music.jpg)
+![Music Cover](https://telegra.ph/file/e5aaa494015bccbe1ec85.jpg)
 
 This is a music bot project that handles various music operations.
 
@@ -13,8 +13,7 @@ This is a music bot project that handles various music operations.
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/nub-coders/nub-music-bot.git
-cd nub-music-bot
+git clone https://github.com/GhosttBatt/AjLovely-X-Music.git AjLovely-X-Music
 ```
 
 2. Install dependencies:
